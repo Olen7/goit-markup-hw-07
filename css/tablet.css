@@ -1,0 +1,139 @@
+@media screen and (min-width: 768px) {
+    
+    .container{
+        width: 768px;
+    }
+    .container-foooter{
+        width: 768px;
+    }
+    
+    .aside-list{
+        display: flex;
+        flex-direction: row;
+        gap: 72px 24px;
+        flex-wrap: wrap;
+    }
+    /*-------header------------*/
+    .header {
+        padding-bottom: 24px; 
+    }
+    .header-link {
+        margin-right: 120px;
+    }
+    .menu-list, .socials-list {
+        display: block;
+    }
+    .menu-list{
+        display: flex;
+        align-items:center;
+        position: relative;
+    }
+    .menu-item-studio {
+        margin-right: 40px;
+    } 
+    .menu-item-portfolio{
+        margin-right: 40px;
+    }
+    .menu-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--modal-color);
+        --modal-color: #2E2F42;
+        position: relative;
+        padding-bottom: 28px;
+    }
+    .menu-open-burger{
+        display: none;
+    }
+    /*-------siction1----------*/
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/tablet-people-office.jpg) ;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/tablet-people-office-2x.jpg);
+            
+    }}
+    .caption {
+        margin-bottom: 36px;
+        
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        width: 496px;
+    }   
+    /*-------siction2----------*/
+    .container-section {
+        justify-content: flex-start;
+        width: 356px;
+    } 
+    /*-------siction3----------*/
+    
+    /*------siction4--------- */
+    .team-block{
+        max-width: 264px;
+    }
+    .team-items{
+        /* width:calc((100%-24px) / 2); */
+        gap: 64px 24px;
+}
+/*-------siction5--------- */
+.icon-section{
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    
+}
+.icon-items {
+    width: 168px;
+    height: 88px;
+    }
+.footer-content {
+    justify-content: flex-start;
+}
+.footer-item-list{
+    align-items: flex-start;
+    margin-right: 24px;
+}
+.footer-items {
+    align-items: flex-start;
+}
+.text-subscribe {
+    justify-content: flex-start;
+}
+.footer-form{
+    flex-direction: row;
+}
+.footer-mail-user{
+    width: 264px;
+    margin-top: 16px;
+}
+.footer-label{
+    margin-right: 24px;
+}
+.footer-form {
+    align-items: flex-end;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    .text-subscribe{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-label{
+        margin-bottom: 16px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px){
+    .footer-content {
+        padding-left:110px ;
+        justify-content: flex-start;
+    }
+}

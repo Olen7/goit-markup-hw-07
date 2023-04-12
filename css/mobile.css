@@ -1,0 +1,50 @@
+@media screen and (min-width: 428px){
+    /*-------siction1----------*/
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/mobile-people-office-2x.jpg);
+        }}
+    /*-------siction2----------*/
+    .container-section {
+        width: 396px;
+    } 
+    /*-------siction3----------*/
+
+    /*-------siction4--------- */
+    .container{
+        width: 428px;
+    }
+    .container-foooter{
+        width: 428px;
+    }
+    .team-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 72px;
+    }
+    .team-block{
+        width: 264px;
+    }
+    /*-------siction5--------- */
+    .icon-items{
+        width:calc((100%-16px) / 2);
+    }
+    .icon-section{
+        flex-wrap: wrap;
+        gap: 72px 16px;
+    }
+    .icon-items{
+        width:190px;
+        height:88px;
+    }
+    .footer-mail-user{
+        width: 396px;
+    }
+    /*----------FOOTHER----------------*/
+    
+   
+    }

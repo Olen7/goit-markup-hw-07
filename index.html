@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
-    
+    <link href="./css/styles.css" rel="stylesheet"> 
+    <link href="./css/mobile.css" rel="stylesheet">
+    <link href="./css/tablet.css" rel="stylesheet">
+    <link href="./css/desctop.css" rel="stylesheet"> 
 </head>
-<!-------------------HEADER---------------------------->
+      <!--------------------HEADER--------------------------->
   <body class="body" id="body">
-    <header class="header ">
+      <header class="header ">
     <div class="container header-container">
       <nav class="header-nav">
         <a href="./index.html" class="header-link link">Web<span class="header-studio link">Studio</span></a>
@@ -25,20 +27,77 @@
           <li class="menu-item-contacts ">
             <a href="" class="menu-link link after-line">Contacts</a></li>
         </ul>
-      </nav>
-      <!-------------------ADDRESS---------------->
+      </nav> 
+      <!------------------ADDRESS-------------- -->
       <address class="socials">
         <ul class="socials-list list">
           <li class="socials-contacts socials-mailto"><a href="mailto:info@devstudio.com" class="socials-address link">info@devstudio.com</a></li>
           <li class="socials-contacts"><a href="tel:+110001111111" class="socials-address link">+11 (000) 111-11-11</a></li>
         </ul>
+        <button type="button" data-menu-open class="menu-open-burger">
+          <svg class="menu-open-burger-icon"  width="32" height="32">
+          <use href="./images/icons.svg#icon-menu-hamburger" ></use>
+        </svg>
+        </button>
       </address>
+      
+    </div>
+    <div class="mob-menu is-hidden" data-menu> 
+      <div>
+      <button data-menu-close class="mob-close-button">
+        <svg class="mob-bacdrop-svg" width="8" height="8">
+          <use href="./images/close-black-18dp.svg#icon-close-black-18dp"></use>
+        </svg>
+    </button>
+      <ul class="mob-menu-list list">
+        <li class="mob-menu-item studio ">
+          <a href="./index.html" class="mob-menu-link link after-line curent">Studio</a></li>
+        <li class="mob-menu-item portfolio ">
+          <a href="./portfolio.html" class="mob-menu-link link after-line">Portfolio</a></li>
+        <li class="mob-menu-item contacts ">
+          <a href="" class="mob-menu-link link after-line">Contacts</a></li>
+      </ul>
+    </div>
+      <div>
+      <ul class="mob-socials-list list">
+        <li class="mob-socials-contacts"><a href="tel:+110001111111" class="mob-socials-address link">+11 (000) 111-11-11</a></li>
+        <li class=" mob-socials-mailto"><a href="mailto:info@devstudio.com" class="mob-socials-mail link">info@devstudio.com</a></li> 
+      </ul>
+      <ul class="mobil-soc list">  
+        <li class="mobil-soc-items">
+          <a class="mobil-soc-link link" href="">
+            <svg width="24" height="24" class="mobil-soc-item-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobil-soc-items">
+          <a class="mobil-soc-link link" href="">
+            <svg width="24" height="24" class="mobil-soc-item-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobil-soc-items">
+          <a class="mobil-soc-link link" href="">
+            <svg width="24" height="24" class="mobil-soc-item-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobil-soc-items">
+          <a class="mobil-soc-link link" href="">
+            <svg width="24" height="24" class="mobil-soc-item-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     </div>
     </header>
-    
     <main>
       <!--------------------section1------------------------->
-      
       <section class="title">
         <div class="hero-container container">
           <h1 class="caption">Effective Solutions for Your Business</h1>
@@ -129,11 +188,9 @@
               </div>
             </div>
 
-    </section>  
-
-      
-      <!---------------------------section2--------------------->
-      <section class="aside">
+      </section>   
+      <!--------------------section2------------------------->
+      <section class="aside ">
       <h2 class="none"></h2>
         <div class="container">
         <ul class="aside-list list">
@@ -185,28 +242,28 @@
         </ul>
       </div>
       </section>
-      
-      <!------------------------section3---------------------------->
-      
+      <!--------------------section3------------------------->
       <section class="img">
         <div class="container">
           <h2 class="img-text">What are we doing</h2>
           <ul class="img-menu list">
-          <li><img src="./images/img-1.jpg" alt="monitor_with_main_page" width="360" height="300"></li>
-          <li><img src="./images/img-2.jpg" alt="phone_and_tabs" width="360" height="300"></li>
-          <li><img src="./images/img-3.jpg" alt="phone in hand" width="360" height="300"></li>
+          <li><img srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"  src="./images/img-1.jpg" alt="monitor_with_main_page" width="360" height="300"></li>
+          <li><img srcset="./images/img-2-2x.jpg 1x, ./images/img-2-2x.jpg 2x" src="./images/img-2.jpg" alt="phone_and_tabs" width="360" height="300"></li>
+          <li><img srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x" src="./images/img-3.jpg" alt="phone in hand" width="360" height="300"></li>
         </ul>
         </div>
-      </section>
-
-      <!------------------------section4------------------------------->
-      
+      </section> 
+      <!-----------------section4------------------------->
       <section class="team">
-        <div class="container">
+        <div class="container section">
           <h2 class="team-text">Our Team</h2>
           <ul class="list team-items">
-            <li class="team-block"><img src="./images/team-1.jpg" alt="face1" width="264"
-            height="260">
+            <li class="team-block block-team">
+              <img srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x" 
+              src="./images/team-1.jpg" 
+              alt="face1" 
+              width="264"
+              height="260">
             <div class="text-profil">
               <h3 class="team-name">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
@@ -240,8 +297,12 @@
         
         
         
-            <li class="team-block"><img src="./images/team-2.jpg" alt="face2" width="264"
-            height="260">
+            <li class="team-block">
+              <img srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
+                  src="./images/team-2.jpg" 
+                  alt="face2" 
+                  width="264"
+                  height="260">
               <div class="text-profil">
               <h3 class="team-name">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
@@ -274,8 +335,12 @@
           
         
         
-            <li class="team-block"><img src="./images/team-3.jpg" alt="face3" width="264"
-            height="260">
+            <li class="team-block">
+              <img srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
+              src="./images/team-3.jpg" 
+              alt="face3" 
+              width="264"
+              height="260">
               <div class="text-profil">
               <h3 class="team-name">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
@@ -308,8 +373,12 @@
           
         
         
-            <li class="team-block"><img src="./images/team-4.jpg" alt="face4" width="264"
-            height="260">
+            <li class="team-block">
+              <img srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
+              src="./images/team-4.jpg" 
+              alt="face4" 
+              width="264"
+              height="260">
               <div class="text-profil">
               <h3 class="team-name">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
@@ -345,8 +414,8 @@
         </div> 
       
       </section>
-      <!---------siction5----------->
-      <section class="icon-customers container">
+      <!--------------------section5------------------------->
+      <section class="icon-customers container section">
         <h2 class="icon-text">Customers</h2>
         <ul class="list icon-section">
           <li class="icon-items">
@@ -392,19 +461,18 @@
             </svg>
           </a>
           </li>
+          
         </ul>
       </section>
     </main>
-
-    <!------------------FOOTHER----------------------->
-
-    <footer class="footer">
-      <div class="footer-conteiner">
+    <!----------------------FOOTHER-------------------------->
+    <footer class="footer  ">
+      <div class="footer-content  container-foooter">
         <ul class="footer-item-list list">
-          <li class="">
-            <a href="./index.html" class="header-link link footer-link">Web<span class="footer-studio link">Studio</span></a>
+          <li class="footer-link-mobile">
+            <a href="./index.html" class="link footer-link">Web<span class="footer-studio link">Studio</span></a>
           </li>
-          <li class="">
+          <li class="footer-text-mobile">
             <p class="footer-text">
               Increase the flow of customers and sales for your business with digital
               marketing & growth solutions.
@@ -468,5 +536,6 @@
     </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
