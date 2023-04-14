@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
     
     .container{
-        width: 768px;
+        max-width: 768px;
     }
     .container-foooter{
         width: 768px;
@@ -34,20 +34,12 @@
     .menu-item-portfolio{
         margin-right: 40px;
     }
-    .menu-link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--modal-color);
-        --modal-color: #2E2F42;
-        position: relative;
-        padding-bottom: 28px;
-    }
+    
     .menu-open-burger{
         display: none;
     }
-    /*-------siction1----------*/
+  
+    /*-------siction1---------- */
     .title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/tablet-people-office.jpg) ;
     }
@@ -132,8 +124,33 @@
 }
 
 @media screen and (min-width:768px) and (max-width: 1199px){
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu-list {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
     .footer-content {
         padding-left:110px ;
         justify-content: flex-start;
     }
+    .socials-mailto{
+        
+        margin-bottom: 12px;
+    }
+    .socials-list{
+        
+    }
+    .socials-address{
+        font-size: 12px;
+        line-height: 1.17;
+        
 }
+/* .socials {
+    margin-top: 16px;
+    margin-bottom: 16px;
+} */
+}
+

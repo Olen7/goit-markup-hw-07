@@ -30,6 +30,10 @@
     }
 }
     /*-------siction2----------*/
+    .aside {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
     .aside-list{
         display: flex;
         justify-content: space-between;
@@ -68,7 +72,7 @@
     
     /*-------siction4--------- */
     .container{
-        width: 1158px;
+        max-width: 1158px;
     }
     .container-foooter{
         width: 1158px;

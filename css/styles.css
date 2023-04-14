@@ -66,6 +66,7 @@ img {
 }
 .header-nav{
     display: flex;
+    align-items: center;
     flex-direction:row;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -87,11 +88,27 @@ img {
     display: none;
 }
 
-.menu-link:hover,.menu-link:focus {
-    color: #404bbf;
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+.menu-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+         color: var(--modal-color);
+        --modal-color: #2E2F42;
+        position: relative;
+        padding-bottom: 28px;
+    }  
+    .link.current::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--pressed-state-color);
+        position: absolute;
+        bottom: -1px;
+    } 
 .menu-link.after-line::after {
     content: "";
     display: block;
@@ -104,8 +121,15 @@ img {
     bottom: 0;
     margin-top: 24px;
     opacity: 0;
-}
-.after-line:hover::after {
+} 
+
+ .menu-link:hover,.menu-link:focus {
+    color: #404bbf;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}   
+
+ .after-line:hover::after {
     background: #404BBF;
     opacity: 1;
     transition-duration:250ms;
@@ -114,12 +138,12 @@ img {
 .menu-list:hover::after,.menu-list:focus::after {
     background: #404BBF;
     opacity: 1;
-}
-
+} 
 /*-------------------address---------------*/
 .socials {
     font-style: normal;
 }
+
 .socials-address{
     font-size: 16px;
     line-height: 1.5;
@@ -287,7 +311,7 @@ color: #434455;
 }
 .modal {
     padding: 72px 24px 24px;
-    width: 408px;
+    width: 100%;
     height: 584px;
     position: absolute;
     top: 50%;
@@ -344,13 +368,13 @@ color: #434455;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 16px;
-    width: 360px;
+    max-width: 360px;
     height: 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
@@ -505,10 +529,8 @@ color: #434455;
 }
 /*--------------siction2--------------*/
 .aside {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 96px;
+    margin-bottom: 96px;
 }
 .aside-list{
     display: flex;
