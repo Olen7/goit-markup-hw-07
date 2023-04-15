@@ -88,57 +88,6 @@ img {
     display: none;
 }
 
-
-.menu-link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-         color: var(--modal-color);
-        --modal-color: #2E2F42;
-        position: relative;
-        padding-bottom: 28px;
-    }  
-    .link.current::after {
-        content: "";
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-        background-color: var(--pressed-state-color);
-        position: absolute;
-        bottom: -1px;
-    } 
-.menu-link.after-line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background: #404BBF;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    margin-top: 24px;
-    opacity: 0;
-} 
-
- .menu-link:hover,.menu-link:focus {
-    color: #404bbf;
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}   
-
- .after-line:hover::after {
-    background: #404BBF;
-    opacity: 1;
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-list:hover::after,.menu-list:focus::after {
-    background: #404BBF;
-    opacity: 1;
-} 
 /*-------------------address---------------*/
 .socials {
     font-style: normal;
