@@ -133,6 +133,10 @@
 .footer-form {
     align-items: flex-end;
 }
+/* PORTFOLIO */
+.menu-items {
+    padding: 12px 24px;
+}
 }
 
 
@@ -170,7 +174,12 @@
     .socials-address{
         font-size: 12px;
         line-height: 1.17;
-        
-}
-
+        }
+    .button {
+        justify-content: center;
+    }
+    .content {
+        width: 356px;
+        height: 420px;
+    }
 }

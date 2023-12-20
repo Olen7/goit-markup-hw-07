@@ -16,6 +16,9 @@
     .caption {
         margin-bottom: 48px;
     } 
+    .button {
+        justify-content: center;
+    }
     .title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office.jpg) ;
         max-width: 1440px;
@@ -145,7 +148,12 @@
         margin-top: 16px;
         margin-right: 24px;
     }
-   
+    /* PORTFOLIO */
+    .content {
+        width: 360px;
+        height: 420px;
+    }
+
 }
     @media screen and (max-width: 1199px) {
         .items-icon{
